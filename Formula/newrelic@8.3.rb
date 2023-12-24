@@ -4,7 +4,7 @@
 require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 # Class for Newrelic Extension
-class NewrelicAT74 < AbstractPhpExtension
+class NewrelicAT83 < AbstractPhpExtension
   init
   desc "Newrelic PHP extension"
   homepage "https://github.com/newrelic/newrelic-php-agent"
@@ -33,8 +33,8 @@ class NewrelicAT74 < AbstractPhpExtension
       [#{extension}]
       #{extension_type}="#{module_path}"
       newrelic.daemon.location="#{prefix}/daemon"
-      newrelic.daemon.address="/tmp/.newrelic80.sock"
-      newrelic.daemon.port="/tmp/.newrelic80.sock"
+      newrelic.daemon.address="/tmp/.newrelic81.sock"
+      newrelic.daemon.port="/tmp/.newrelic81.sock"
       newrelic.logfile="/var/log/newrelic_php_agent.log"
       newrelic.daemon.logfile="/var/log/newrelic_daemon.log"
     EOS
